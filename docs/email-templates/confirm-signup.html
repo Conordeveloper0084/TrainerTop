@@ -1,0 +1,20 @@
+<div style="background:#0A0A0A;padding:32px 16px;font-family:Arial,Helvetica,sans-serif;">
+  <div style="max-width:480px;margin:0 auto;background:#141414;border-radius:16px;padding:32px;color:#ffffff;">
+    <div style="font-size:22px;font-weight:bold;">trainer<span style="color:#B4FF00;">top</span></div>
+    <h2 style="font-size:18px;margin:28px 0 8px;color:#ffffff;">Emailingizni tasdiqlang</h2>
+    <p style="color:#bbbbbb;font-size:14px;line-height:1.6;margin:0 0 24px;">
+      Trainertop'da ro'yxatdan o'tganingiz uchun rahmat! Akkauntingizni faollashtirish uchun quyidagi tugmani bosing.
+    </p>
+    <p style="margin:0 0 28px;">
+      <a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&amp;type=email&amp;next=/auth/confirmed"
+         style="display:inline-block;background:#B4FF00;color:#000000;font-weight:bold;text-decoration:none;padding:14px 28px;border-radius:10px;font-size:15px;">
+        Emailni tasdiqlash
+      </a>
+    </p>
+    <p style="color:#888888;font-size:13px;margin:0 0 8px;">Ilovadan ro'yxatdan o'tgan bo'lsangiz, ilovaga quyidagi kodni kiriting:</p>
+    <p style="font-size:28px;letter-spacing:6px;font-weight:bold;margin:0 0 28px;color:#B4FF00;">{{ .Token }}</p>
+    <p style="color:#666666;font-size:12px;line-height:1.5;margin:0;">
+      Agar siz Trainertop'da ro'yxatdan o'tmagan bo'lsangiz, bu xatni e'tiborsiz qoldiring.
+    </p>
+  </div>
+</div>
