@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Internet yo'q — TrainerTop</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: #0A0A0A; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px;
+    padding-top: max(24px, env(safe-area-inset-top));
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
+  }
+  .wrap { max-width: 320px; }
+  .icon { width: 64px; height: 64px; margin: 0 auto 20px; opacity: 0.5; }
+  h1 { font-size: 17px; font-weight: 700; margin: 0 0 8px; }
+  p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.5; margin: 0 0 24px; }
+  button {
+    background: #C7F32E; color: #0A0A0A; border: none; border-radius: 12px;
+    padding: 12px 24px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  button:active { transform: scale(0.97); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M12 18h.01M8.5 14.5a5 5 0 0 1 7 0M5.5 11a9 9 0 0 1 13 0M2.5 7.5a13 13 0 0 1 19 0" stroke-linecap="round"/>
+      <line x1="2" y1="2" x2="22" y2="22" stroke-linecap="round"/>
+    </svg>
+    <h1>Internet aloqasi yo'q</h1>
+    <p>TrainerTop'ga ulanib bo'lmadi. Internetga ulanganingizni tekshirib, qayta urinib ko'ring.</p>
+    <button onclick="location.reload()">Qayta urinib ko'rish</button>
+  </div>
+</body>
+</html>
